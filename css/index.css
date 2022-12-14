@@ -1,0 +1,41 @@
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .header a{
+        font-size: 20px;
+    }
+    .fa-solid {
+        font-size: 25px;
+        color: red;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+    .fa-heart, .fa-trash {
+        float: right;
+    }
+    .fa-cart-shopping {
+        float: left;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .container .product {
+        border: 1px solid black;
+        margin: 15px;
+        text-align: center;
+    }
+    .container .product img {
+        width: 200px;
+        height: 250px;
+    }
+    #view {
+        background-color: white;
+        color: black;
+        position: absolute;
+        left: 45px;
+        min-height: 20px;
+    }

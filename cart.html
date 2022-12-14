@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://kit.fontawesome.com/3b79043855.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .table th {
+        border: 1px solid black;
+
+    }
+    .table td {
+        width: 200px;
+        text-align: center;
+        border: 1px solid black;
+
+    }
+    .table img {
+        width: 100px;
+    }
+
+</style>
+
+<body>
+    <div class="header">
+        <a href="/index.html">Home</a>
+        <a href="/favorite.html" onclick="viewFavorite()" id="cart">Favorite</a>
+        <a href="/cart.html" onclick="viewCart()" id="cart">Cart</a>
+        <input type="text" id="search" oninput="searchProduct()" placeholder="Search">
+    </div>
+    <div id="view"></div>
+    <div class="container" id="showProduct"></div>
+    <div class="table">
+        <table>
+            <tr>
+                <th>Ảnh</th>
+                <th>Tên</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Remove</th>
+                <th>Total Amount</th>
+            </tr>
+            <tbody id="money">
+
+            </tbody>
+        <tr>
+            <td colspan="5">Tổng</td>
+            <td id="total-money"></td>
+        </tr>    
+        </table>
+    </div>
+</body>
+<script src="/js/cart.js"></script>
+
+</html>
